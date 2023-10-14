@@ -89,8 +89,6 @@ function deVigenereWithKnownWordRu() {
     $("plaintext").value = VigenereRu(ciphertext, key, false);
 }
 
-// The rest of your existing code remains the same.
-
 
 function findKeyFromKnownWord(ciphertext, knownWord) {
     var key = "";
@@ -112,7 +110,7 @@ function findKeyFromKnownWord(ciphertext, knownWord) {
 }
 
 function enVigenere (argument) {
-    // body...
+    
     console.log("Cipher")
     var plaintext = $("plaintext").value;
     var key = $("key").value.toLowerCase();
@@ -121,7 +119,7 @@ function enVigenere (argument) {
 }
 
 function deVigenere (argument) {
-    // body...
+    
     console.log("Decrypt")
     var ciphertext = $("ciphertext").value;
     var key = $("key").value.toLowerCase(); 
@@ -193,7 +191,6 @@ window.onload = function  (argument) {
 	var languageSelect = $("language");
     var encryptionButton = $("encryption");
 
-    // Set up the click event based on the selected language
     encryptionButton.onclick = function() {
         var selectedLanguage = languageSelect.value;
         if (selectedLanguage === "english") {
